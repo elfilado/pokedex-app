@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { POKEMONS } from '../mock-pokemon-list';
 import { Pokemon } from '../pokemon';
 
@@ -15,7 +16,13 @@ export class ListPokemonComponent{
   //Si pokemonSelected est de type undefined, il vaut false
   pokemonSelected: Pokemon|undefined; 
 
-  selectPokemon(pokemon: Pokemon){
+  constructor(private router: Router){}
+
+  goToPokemon(pokemon: Pokemon) {
+    this.router.navigate(['/pokemons', pokemon.id]);
+  }
+
+  selectPokemon(pokemon: Pokemon) {
 
     const pokemonFound: Pokemon|undefined = this.pokemonList.find(pokemonFound => pokemonFound.id == +pokemon.id);
 
