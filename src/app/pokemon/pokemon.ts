@@ -1,7 +1,7 @@
 export class Pokemon{
     id: number;
     hp: number;
-    cp: number;
+    attack: string;
     name: string;
     picture: string;
     types: Array<string>;

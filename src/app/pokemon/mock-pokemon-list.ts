@@ -4,8 +4,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 1,
         name: "Florizarre",
-        hp: 47,
-        cp: 5,
+        hp: 130,
+        attack: "Lance-Soleil",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png",
         types: ["Plante", "Poison"],
         created: new Date()
@@ -13,8 +13,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 2,
         name: "Dracaufeu",
-        hp: 48,
-        cp: 6,
+        hp: 120,
+        attack: "Déflagration",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png",
         types: ["Feu"],
         created: new Date()
@@ -22,8 +22,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 3,
         name: "Tortank",
-        hp: 51,
-        cp: 4,
+        hp: 130,
+        attack: "Hydro-Canon",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png",
         types: ["Eau"],
         created: new Date()
@@ -31,8 +31,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 4,
         name: "Mewtwo",
-        hp: 70,
-        cp: 2,
+        hp: 150,
+        attack: "Frappe Psy",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/150.png",
         types: ["Psy"],
         created: new Date()
@@ -40,8 +40,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 5,
         name: "Dracolosse",
-        hp: 60,
-        cp: 7,
+        hp: 110,
+        attack: "Draco-Choc",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/149.png",
         types: ["Dragon", "Vol"],
         created: new Date()
@@ -49,8 +49,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 6,
         name: "Sulfura",
-        hp: 55,
-        cp: 6,
+        hp: 110,
+        attack: "Rafale Feu",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/146.png",
         types: ["Feu", "Vol"],
         created: new Date()
@@ -58,8 +58,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 7,
         name: "Aquali",
-        hp: 34,
-        cp: 5,
+        hp: 70,
+        attack: "Hydro-Queue",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/134.png",
         types: ["Eau"],
         created: new Date()
@@ -67,8 +67,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 8,
         name: "Ectoplasma",
-        hp: 36,
-        cp: 4,
+        hp: 100,
+        attack: "Vibrobscur",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/094.png",
         types: ["Spectre", "Poison"],
         created: new Date()
@@ -76,8 +76,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 9,
         name: "Pikachu",
-        hp: 21,
-        cp: 7,
+        hp: 60,
+        attack: "Tonnerre",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png",
         types: ["Electrik"],
         created: new Date()
@@ -85,8 +85,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 10,
         name: "Alakazam",
-        hp: 39,
-        cp: 3,
+        hp: 120,
+        attack: "Choc Mental",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/065.png",
         types: ["Psy"],
         created: new Date()
@@ -94,8 +94,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 11,
         name: "Nidoqueen",
-        hp: 35,
-        cp: 5,
+        hp: 140,
+        attack: "Séisme",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/031.png",
         types: ["Poison", "Sol"],
         created: new Date()
@@ -103,8 +103,8 @@ export const POKEMONS: Pokemon[] = [
     {
         id: 12,
         name: "Lokhlass",
-        hp: 44,
-        cp: 8,
+        hp: 130,
+        attack: "Surf",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/131.png",
         types: ["Eau", "Glace"],
         created: new Date()

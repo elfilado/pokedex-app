@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: Roboto, Helvetica, sans-serif;
+}
 
-.pointer{
+.pointer {
     cursor: pointer;
 }
+
+.nav-wrapper {
+    background-color: #9e0505 !important;
+    font-size: 14px;
+    font-weight: bold;
+  }
