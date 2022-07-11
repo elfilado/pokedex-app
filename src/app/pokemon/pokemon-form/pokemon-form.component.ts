@@ -29,7 +29,7 @@ export class PokemonFormComponent implements OnInit {
   selectType($event: Event, type: string): void {
     const isChecked: boolean = ($event.target as HTMLInputElement).checked;
 
-    if(isChecked) {
+    if (isChecked) {
       this.pokemon.types.push(type);
     }
     else {
@@ -39,21 +39,21 @@ export class PokemonFormComponent implements OnInit {
   }
 
   onSubmit() {
-    if(this.isAddForm) {
+    if (this.isAddForm) {
       this.pokemonService.addPokemon(this.pokemon)
-        .subscribe((pokemon: Pokemon) =>  this.router.navigate(['/pokemons', pokemon.id]));
+        .subscribe((pokemon: Pokemon) => this.router.navigate(['/pokemons', pokemon.id]));
     }
     else {
       this.pokemonService.updatePokemon(this.pokemon)
-        .subscribe(() =>  this.router.navigate(['/pokemons', this.pokemon.id]));
+        .subscribe(() => this.router.navigate(['/pokemons', this.pokemon.id]));
     }
   }
 
   isTypesValid(type: string): boolean {
-    if(this.pokemon.types.length == 1 && this.hasType(type)) {
+    if (this.pokemon.types.length == 1 && this.hasType(type)) {
       return false;
     }
-    if(this.pokemon.types.length > 2 && !this.hasType(type)) {
+    if (this.pokemon.types.length > 2 && !this.hasType(type)) {
       return false;
     }
     return true;

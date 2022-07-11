@@ -1,4 +1,4 @@
-import { HttpClient, HttpHandler, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, of, tap } from 'rxjs';
 import { Pokemon } from './pokemon';
@@ -20,6 +20,16 @@ export class PokemonService {
     return this.http.get<Pokemon>(`api/pokemons/${pokemonId}`).pipe(
       tap((pokemon) => console.table(pokemon)),
       catchError((error) => this.handleError(error,undefined))
+    );
+  }
+
+  searchPokemonList(term: string): Observable<Pokemon[]> {
+    if (term.length <= 1) {
+      return of([]);
+    } 
+    return this.http.get<Pokemon[]>(`api/pokemons/?name=${term}`).pipe(
+      tap((pokemon) => console.table(pokemon)),
+      catchError((error) => this.handleError(error, []))
     );
   }
 
