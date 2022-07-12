@@ -20,7 +20,7 @@ export class SearchPokemonComponent implements OnInit {
   ngOnInit(): void {
     this.pokemons$ = this.searchTerms.pipe(
     // {..."a"."ab"..."abz"."ab"..."abc"}
-    debounceTime(200),
+    debounceTime(50),
     // {..."ab"..."ab"..."abc"}
     distinctUntilChanged(),
     // {..."ab"........"abc"}
